@@ -148,4 +148,4 @@ Wazuh's active response turned the detection built in CyberLab 07 into automated
 ## Limitations / next steps
 - Tested with a single attacker and a single agent; a distributed attack from many IPs would not be stopped by blocking one address.
 - The block is at the host firewall only; a network-level control would stop the traffic earlier.
-- Next step: fix the clock drift with NTP, then test the repeat-offender behavior by attacking again right after an unblock.
+- Follow-up done in [Lab 09](https://github.com/ltorres-security/CyberLab-Wazuh-Clock-Sync-Repeat-Offenders-09): the clock drift was fixed with chrony and repeat-offender escalation was tested (120 s, then 181 s).
